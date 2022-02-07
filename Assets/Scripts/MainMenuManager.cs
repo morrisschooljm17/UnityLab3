@@ -7,6 +7,7 @@ public class MainMenuManager : MonoBehaviour
 {
 
     [SerializeField] private Button startGameButton;
+    [SerializeField] private Button notQuitePlatformer;
     [SerializeField] private Button openCredits;
     [SerializeField] private Button closeCredits;
     [SerializeField] private GameObject creditsUI;
@@ -16,6 +17,7 @@ public class MainMenuManager : MonoBehaviour
         openCredits.onClick.AddListener(() => creditsUI.SetActive(true));
         closeCredits.onClick.AddListener(() => creditsUI.SetActive(false));
         startGameButton.onClick.AddListener(() => LoadingScreen.LoadScene("SampleScene"));
+        notQuitePlatformer.onClick.AddListener(() => LoadingScreen.LoadScene("NotQuitePlatformer"));
 
     }
 
